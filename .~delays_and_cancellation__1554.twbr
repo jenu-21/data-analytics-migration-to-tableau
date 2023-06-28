@@ -1,0 +1,804 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='flights (flights_analytics_database)' inline='true' name='federated.1sk9wbd0ky9xkt144o7uu1e4sdfs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='jenu-database-instance.czc3foce11wt.us-east-1.rds.amazonaws.com' name='postgres.16w9rqp1kec1t212sjzwm0bghhj9'>
+            <connection authentication='username-password' class='postgres' dbname='flights_analytics_database' one-time-sql='' port='5432' server='jenu-database-instance.czc3foce11wt.us-east-1.rds.amazonaws.com' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.16w9rqp1kec1t212sjzwm0bghhj9' name='flights' table='[public].[flights]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.16w9rqp1kec1t212sjzwm0bghhj9' name='flights' table='[public].[flights]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dayofmonth</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dayofmonth]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dayofmonth</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dayofweek</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dayofweek]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dayofweek</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deptime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[deptime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>deptime</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crsdeptime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crsdeptime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crsdeptime</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[arrtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arrtime</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crsarrtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crsarrtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crsarrtime</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uniquecarrier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uniquecarrier]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>uniquecarrier</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flightnum</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[flightnum]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>flightnum</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actualelapsedtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[actualelapsedtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>actualelapsedtime</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crselapsedtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[crselapsedtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crselapsedtime</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrdelay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[arrdelay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arrdelay</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depdelay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[depdelay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>depdelay</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[origin]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>origin</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dest</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dest]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dest</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cancelled</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[cancelled]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>cancelled</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diverted</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[diverted]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>diverted</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tailnum</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tailnum]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>tailnum</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[airtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>airtime</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>taxiin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[taxiin]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>taxiin</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>taxiout</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[taxiout]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>taxiout</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_4041518DC66B428392D014508AC1210A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='flights' datatype='table' name='[__tableau_internal_object_id__].[flights_4041518DC66B428392D014508AC1210A]' role='measure' type='quantitative' />
+      <column caption='Actualelapsedtime' datatype='real' name='[actualelapsedtime]' role='measure' type='quantitative' />
+      <column caption='Airtime' datatype='real' name='[airtime]' role='measure' type='quantitative' />
+      <column caption='Arrdelay' datatype='real' name='[arrdelay]' role='measure' type='quantitative' />
+      <column caption='Arrtime' datatype='real' name='[arrtime]' role='measure' type='quantitative' />
+      <column caption='Cancelled' datatype='integer' name='[cancelled]' role='measure' type='quantitative' />
+      <column caption='Crsarrtime' datatype='real' name='[crsarrtime]' role='measure' type='quantitative' />
+      <column caption='Crsdeptime' datatype='real' name='[crsdeptime]' role='measure' type='quantitative' />
+      <column caption='Crselapsedtime' datatype='real' name='[crselapsedtime]' role='measure' type='quantitative' />
+      <column caption='Dayofmonth' datatype='integer' name='[dayofmonth]' role='measure' type='quantitative' />
+      <column caption='Dayofweek' datatype='integer' name='[dayofweek]' role='measure' type='quantitative' />
+      <column caption='Depdelay' datatype='real' name='[depdelay]' role='measure' type='quantitative' />
+      <column caption='Deptime' datatype='real' name='[deptime]' role='measure' type='quantitative' />
+      <column caption='Dest' datatype='string' name='[dest]' role='dimension' type='nominal' />
+      <column caption='Distance' datatype='real' name='[distance]' role='measure' type='quantitative' />
+      <column caption='Diverted' datatype='integer' name='[diverted]' role='measure' type='quantitative' />
+      <column caption='Flightnum' datatype='integer' name='[flightnum]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+      <column caption='Tailnum' datatype='string' name='[tailnum]' role='dimension' type='nominal' />
+      <column caption='Taxiin' datatype='real' name='[taxiin]' role='measure' type='quantitative' />
+      <column caption='Taxiout' datatype='real' name='[taxiout]' role='measure' type='quantitative' />
+      <column caption='Uniquecarrier' datatype='string' name='[uniquecarrier]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='flights' id='flights_4041518DC66B428392D014508AC1210A'>
+            <properties context=''>
+              <relation connection='postgres.16w9rqp1kec1t212sjzwm0bghhj9' name='flights' table='[public].[flights]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Inter' fontsize='10' underline='true'>Which airport has the highest overall arrival delay for all flights for all years?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flights (flights_analytics_database)' name='federated.1sk9wbd0ky9xkt144o7uu1e4sdfs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sk9wbd0ky9xkt144o7uu1e4sdfs'>
+            <column caption='Arrdelay' datatype='real' name='[arrdelay]' role='measure' type='quantitative' />
+            <column-instance column='[arrdelay]' derivation='Avg' name='[avg:arrdelay:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[origin]' derivation='None' name='[none:origin:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:year:qk]' included-values='in-range'>
+            <min>1987</min>
+            <max>1996</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:origin:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[avg:arrdelay:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[avg:arrdelay:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:origin:nk]</cols>
+      </table>
+      <simple-id uuid='{58AFC8DB-0A20-4353-A098-11DA7E6E2C14}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Inter' fontsize='10' underline='true'>Which airport has the overall highest average departure delay for all flights for all years? </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flights (flights_analytics_database)' name='federated.1sk9wbd0ky9xkt144o7uu1e4sdfs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sk9wbd0ky9xkt144o7uu1e4sdfs'>
+            <column caption='Arrdelay' datatype='real' name='[arrdelay]' role='measure' type='quantitative' />
+            <column-instance column='[origin]' derivation='None' name='[none:origin:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+            <column-instance column='[arrdelay]' derivation='Sum' name='[sum:arrdelay:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:year:qk]' included-values='in-range'>
+            <min>1987</min>
+            <max>1996</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:origin:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[sum:arrdelay:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[sum:arrdelay:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:origin:nk]</cols>
+      </table>
+      <simple-id uuid='{42381328-4664-4BEF-B9C0-B4D646F12E7D}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Inter' fontsize='10' underline='true'>Which airport has the highest number of cancelled flights for all years?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flights (flights_analytics_database)' name='federated.1sk9wbd0ky9xkt144o7uu1e4sdfs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sk9wbd0ky9xkt144o7uu1e4sdfs'>
+            <column caption='Cancelled' datatype='integer' name='[cancelled]' role='measure' type='quantitative' />
+            <column-instance column='[cancelled]' derivation='Count' name='[cnt:cancelled:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[origin]' derivation='None' name='[none:origin:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:year:qk]' included-values='in-range'>
+            <min>1987</min>
+            <max>1996</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:origin:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[cnt:cancelled:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[cnt:cancelled:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[none:origin:nk]</cols>
+      </table>
+      <simple-id uuid='{47263BD6-4895-49C8-A20E-4C1E77B139E7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='62625' id='3' name='Sheet 2' w='82400' x='800' y='36375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17375' id='9' name='Sheet 4' w='82400' x='800' y='19000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18000' id='11' name='Sheet 3' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='15750' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[avg:arrdelay:qk]' type-v2='size' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='18250' id='10' name='Sheet 4' pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[cnt:cancelled:qk]' type-v2='size' w='16000' x='83200' y='16750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='15750' id='12' name='Sheet 3' pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[sum:arrdelay:qk]' type-v2='size' w='16000' x='83200' y='35000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='136' h='18000' id='11' is-fixed='true' name='Sheet 3' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15750' id='12' name='Sheet 3' pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[sum:arrdelay:qk]' type-v2='size' w='16000' x='83200' y='35000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='131' h='17375' id='9' is-fixed='true' name='Sheet 4' w='82400' x='800' y='19000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18250' id='10' name='Sheet 4' pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[cnt:cancelled:qk]' type-v2='size' w='16000' x='83200' y='16750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='62625' id='3' is-fixed='true' name='Sheet 2' w='82400' x='800' y='36375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15750' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[avg:arrdelay:qk]' type-v2='size' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1AD0F9F7-389E-4ABF-8E3E-658F58FC7793}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[sum:arrdelay:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9019A6E8-9755-4C1A-B5A5-FA9976E02209}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3204EFD5-3B02-4BA8-96C6-D26659334E29}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[avg:arrdelay:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6A3D450C-8AF4-4BB1-ACDF-1EB85102ADDC}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1sk9wbd0ky9xkt144o7uu1e4sdfs].[cnt:cancelled:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1281398C-2F81-40AF-B657-CE0605CFF044}' />
+    </window>
+  </windows>
+</workbook>
