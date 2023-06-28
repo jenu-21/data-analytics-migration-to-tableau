@@ -24,7 +24,6 @@ for i, df in enumerate(dataframes):
     df = df.dropna(axis=1, how='all')
     df = df.fillna(0)
     dataframes[i] = df
-
     # print(f"Modified dataframe for {year}:")
     # print(df.head())
     # print()
@@ -41,15 +40,12 @@ for df in dataframes:
     dataframes[i] = df
 
 master_df = pd.concat(dataframes, ignore_index=True)
-
-# num_records_csv = len(master_df)
-# print("Number of records in the combined_data.csv file:", num_records_csv)
-
-
-# print("Column names in master_df :", master_df.columns)
-
 print("Master dataframe:")
 print(master_df.head())
 master_df.to_csv('combined_data.csv', index = False)
+
+# num_records_csv = len(master_df)
+# print("Number of records in the combined_data.csv file:", num_records_csv)
+# print("Column names in master_df :", master_df.columns)
 
 
