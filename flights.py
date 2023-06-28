@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-data_directory = '/Users/jenu21/Desktop/tableau_migration'
+data_directory = '/Users/jenu21/Desktop/tableau_migration/csv_files'
 csv_files = ['1987.csv', '1989.csv', '1990.csv', '1991.csv', '1992.csv', '1993.csv', '1994.csv', '1995.csv', '1996.csv']
 
 dataframes = []
