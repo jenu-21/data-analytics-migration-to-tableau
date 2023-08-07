@@ -13,6 +13,8 @@
 
 ## PostgreSQL RDS Data import and reporting
 ##### Connected my PgAdmin4 to the PostgreSQL RDS database, then imported my master dataframe into it and proceeded to undertake some SQL queries. 
+![SQL results](sql_queries.md)
 
 ## Integrate Tableau desktop with PostgreSQL RDS and Tableau reports
 ##### Once connecting my PostgreSQL to my Tableau Desktop it was easier to explore the dataset through a variety of visualisation techniques tableau has such as treemap, line charts or histograms. 
+![Tableau Visualisations](tableau_visualisations)
